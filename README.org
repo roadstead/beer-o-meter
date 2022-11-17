@@ -44,8 +44,30 @@ Building and Scaling High Performing Technology Organizations]].
 - Asset Type: classes of data available
 - Scope (system assets created within a scope or project)
 
+** Discussion
+Version1
+- With regard to defects, it would be important to filter on things like "ALM.." or "INC.."
+- we could get a list of team names, and a list of pi's and make a graph/bar chart
+- can we determine if a defect has been "reopened"
+- can we determine time spent in states?, time spent in teams?
+- how often has the defect changed teams?
+Git
+- tags with defect number in git, time to deploy is registered
+- when was the tag created in git which contains the fix (mttf)
+- when was the defect closed in V1, and when was the delta tag created?
+- when was the defect tag created, and when was it included in the 
 
 ** Planning
+
+Sketch out the data we can get, get one data stream and graph, and
+then make a proposal based on the future.
+
+Can we get a defect out of version1 and then determine when it was deployed.
+
+If we measure number of defects, then we will get fewer defects. So
+let's not do this.
+
+Get a defect out of version1 with clojure.
 
 *** Preliminary
 1. get a version1 access token (seems like it might be easier with
