@@ -1,0 +1,57 @@
+* beer-o-meter
+
+BEER-O-METER is an application which can tell management when it is
+time to order the beer for a celebration of a team's software quality
+improvements.
+
+** Intention
+
+This application intends to measure software quality improvements
+using two sets of measurements, both defined in Fosgren, Humble, and
+Kim's book [[https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339][Accelerate: The Science of Lean Software and DevOps:
+Building and Scaling High Performing Technology Organizations]].
+
+*** In terms of SOFTWARE DELIVERY PERFORMANCE: 
+
+ - deploy frequency
+ - lead time
+ - mean time to restore
+ - change fail %
+
+*** In terms of QUALITY:
+
+ - "unplanned work" and "rework"
+ - "manual work"
+
+*** Use Work Planning Data
+
+ In the ICE Organization, we use [[https://www52.v1host.com/skatteministeriet/Default.aspx?menu=MyHomeEnterpriseGettingStartedPage][Version1 (aka Digital.AI Agility)]] to
+ plan and manage our software work flow assets. In their [[https://docs.digital.ai/bundle/app-management/page/Developers-Library_10403644072.html][Developer's
+ Library]], there exists a set of RESTful API's which will allow the
+ application to query, process, and reduce the assets into the
+ forementioned measurements.
+
+** Background Reading
+
+*** Version1
+- [[https://docs.digital.ai/bundle/agility-onlinehelp/page/Content/DeveloperLibrary/Developer_Library.htm][Digital.ai Agility Developer Library]]
+- [[https://docs.digital.ai/bundle/agility-onlinehelp/page/Content/DeveloperLibrary/VersionOne_REST_API_Tutorial.htm][Digital.ai Agility REST API Tutorial]]
+- [[https://versionone.github.io/api-docs/#][VersionOne API Docs]]
+- [[https://www52.v1host.com/skatteministeriet/ApiConsole.mvc][API Console]]
+
+**** terminology
+- Asset: Story / Backlog Item
+- Asset Type: classes of data available
+- Scope (system assets created within a scope or project)
+
+
+** Planning
+
+*** Preliminary
+1. get a version1 access token (seems like it might be easier with
+   username:password)
+2. determine data model / contract of api
+3. 
+
+*** Query
+`rest-1.v1/Data/Scope/688178/Workitems:Defect[Team.Name='Team Sagsproces']`
