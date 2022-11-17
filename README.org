@@ -1,6 +1,5 @@
-* beer-o-meter
-
-BEER-O-METER is an application which can tell management when it is
+* BOSS (Beer Ordering Sub-System)
+BOSS is an application which can tell management when it is
 time to order the beer for a celebration of a team's software quality
 improvements.
 
